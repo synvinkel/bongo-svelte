@@ -12,9 +12,9 @@ npm run dev
 
 ### Build and publish
 
-
 ```bash
-
+npm run package
+npm publish ./package
 ```
 
 ## create-svelte
