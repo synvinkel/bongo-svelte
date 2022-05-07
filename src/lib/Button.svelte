@@ -1,20 +1,23 @@
 <script lang="ts">
+	import './styles/default.css';
+
 	export let size: 'small' | 'medium' | 'large' = 'medium';
 </script>
 
-<button class="size-{size}" on:click>
+<button class="bui size-{size}" on:click>
 	<slot />
 </button>
 
 <style>
 	button {
 		cursor: pointer;
-		background-color: pink;
+		background-color: var(--on-surface);
 		border: none;
 		padding: 5px;
 		border-radius: 4px;
 		transition: background-color 0.2s;
 
+		color: var(--accent-text);
 	}
 
 	button:active {
