@@ -1,0 +1,72 @@
+@import './index.css';
+
+.bui {
+  --background: white;
+  --on-background: hsl(var(--hue) 10% 10%);
+  --on-background-light: hsl(var(--hue) calc(var(--saturation) * 0.1) 48%);
+
+  --container-background: hsl(var(--hue), 50%, 96%);
+  --container-outline: hsl(var(--hue), 25%, 82%);
+  --container-outline-lighter: hsl(var(--hue), 25%, 92%);
+  --data-table-hover: hsl(var(--hue), 50%, 96%); /* Needs to be opaque */
+
+  --autocomplete: hsl(55, calc(var(--saturation) * 0.87), 66%); /* saturation: 87% */
+
+  --surface: white;
+  --surface-floating: var(--surface);
+  --surface-alternative: hsl(var(--hue) 20% 96%);
+  --surface-highlight: hsl(var(--hue) var(--saturation) var(--lightness));
+  --on-surface: hsl(var(--hue) 10% 10%);
+  --on-surface-light: hsl(var(--hue) 10% 48%);
+  --on-surface-lighter: hsl(var(--hue) 10% 80%);
+
+  --inverted-surface: hsl(var(--hue) 20% 30%);
+  --inverted-surface-highlight: white;
+  --on-inverted-surface: hsl(var(--hue) 20% 95%);
+
+  --ok: hsl(var(--ok-hue) calc(var(--saturation) * 0.48) 40%); /* saturation: 48% */
+  --ok-text: hsl(var(--ok-hue) calc(var(--saturation) * 0.48) 36%); /* saturation: 48% */
+  --on-ok: white;
+
+  --error: hsl(var(--error-hue) calc(var(--saturation) * 0.9) 49%); /* saturation: 90% */
+  --error-text: hsl(var(--error-hue) var(--saturation) 45%); /* saturation: 100% */
+  --on-error: white;
+  --error-highlight: white;
+
+  --warning: hsl(var(--warning-hue) calc(var(--saturation) * 0.97) 58%); /* saturation: 97% */
+  --warning-text: hsl(var(--warning-hue) var(--saturation) 38%); /* saturation: 100% */
+  --on-warning: hsl(var(--hue) 10% 10%);
+
+  --accent: hsl(var(--hue) var(--saturation) var(--lightness));
+  --accent-text: hsl(var(--hue) var(--saturation) calc(var(--lightness) * 0.9));
+  --accent-on-inverted-surface: hsl(var(--hue) var(--saturation) calc(var(--lightness) * 1.2));
+  --accent-surface: var(--accent);
+  --accent-light: hsl(var(--hue) var(--saturation) 93%);
+  --accent-highlight: white;
+  --on-accent: white;
+
+  --selection-control: hsl(var(--hue) 10% 62%);
+  --on-selection-control: #fff;
+
+  --badge: var(--error);
+
+  --navigation: var(--surface);
+  --on-navigation-resting: var(--on-surface-light);
+  --on-navigation-active: var(--accent);
+  --navigation-highlight: var(--surface-highlight);
+
+  --navigation-inverted: var(--inverted-surface);
+  --navigation-inverted-highlight: white;
+  --on-navigation-inverted-resting: hsl(var(--hue) 20% 75%);
+  --on-navigation-inverted-active: var(--inverted-surface-highlight);
+
+  --navigation-accent: var(--accent-surface);
+  --navigation-accent-highlight: white;
+  --on-navigation-accent-resting: hsl(var(--hue) 100% 85%);
+  --on-navigation-accent-active: white;
+
+  --modal-background: hsla(var(--hue), 20%, 90%, 0.9);
+  --box-shadow-color: hsla(var(--hue), 20%, 33%, 0.33);
+
+  --scrollbar-thumb: hsl(var(--hue) 10% 85%);
+}

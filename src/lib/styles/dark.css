@@ -1,0 +1,72 @@
+@import './index.css';
+
+.bui {
+  --background: hsl(var(--hue) 20% 8%);
+  --on-background: hsl(var(--hue) 20% 90%);
+  --on-background-light: hsl(var(--hue) 10% 55%);
+
+  --container-background: hsla(var(--hue), 15%, 17%, 0.8);
+  --container-outline: hsla(var(--hue), 15%, 29%, 0.8);
+  --container-outline-lighter: hsla(var(--hue), 15%, 23%, 0.8);
+  --data-table-hover: hsl(var(--hue), 20%, 15%); /* Needs to be opaque */
+
+  --autocomplete: hsl(55, calc(var(--saturation) * 0.86), 14%); /* saturation: 86% */
+
+  --surface: hsl(var(--hue) 20% 8%);
+  --surface-floating: hsl(var(--hue) 5% 12%);
+  --surface-alternative: hsl(var(--hue) 20% 15%);
+  --surface-highlight: hsl(var(--hue) var(--saturation) 75%);
+  --on-surface: hsl(var(--hue) 20% 90%);
+  --on-surface-light: hsl(var(--hue) 10% 55%);
+  --on-surface-lighter: hsl(var(--hue) 10% 35%);
+
+  --inverted-surface: hsl(var(--hue) 20% 30%);
+  --inverted-surface-highlight: white;
+  --on-inverted-surface: hsl(var(--hue) 20% 95%);
+
+  --ok: hsl(var(--ok-hue) calc(var(--saturation) * 0.48) 40%); /* saturation: 48% */
+  --ok-text: hsl(var(--ok-hue) calc(var(--saturation) * 0.38) 45%); /* saturation: 38% */
+  --on-ok: white;
+
+  --error: hsl(var(--error-hue) var(--saturation) 49%); /* saturation: 100% */
+  --error-text: hsl(var(--error-hue) var(--saturation) 60%); /* saturation: 100% */
+  --on-error: white;
+  --error-highlight: white;
+
+  --warning: hsl(var(--warning-hue) calc(var(--saturation) * 0.97) 58%); /* saturation: 97% */
+  --warning-text: hsl(var(--warning-hue) calc(var(--saturation) * 0.95) 35%); /* saturation: 95% */
+  --on-warning: hsl(var(--hue) 10% 10%);
+
+  --accent: hsl(var(--hue) var(--saturation) calc(var(--lightness) * 1.1290322581));
+  --accent-text: hsl(var(--hue) var(--saturation) calc(var(--lightness) * 1.1));
+  --accent-on-inverted-surface: hsl(var(--hue) var(--saturation) calc(var(--lightness) * 1.2));
+  --accent-surface: hsl(var(--hue) var(--saturation) calc(var(--lightness) * 0.935483871));
+  --accent-light: hsl(var(--hue) var(--saturation) calc(var(--lightness) * 0.4838709677));
+  --accent-highlight: white;
+  --on-accent: white;
+
+  --selection-control: hsl(var(--hue) 10% 30%);
+  --on-selection-control: hsl(var(--hue) 20% 95%);
+
+  --badge: var(--error);
+
+  --navigation: var(--surface);
+  --on-navigation-resting: var(--on-surface-light);
+  --on-navigation-active: var(--accent);
+  --navigation-highlight: var(--surface-highlight);
+
+  --navigation-inverted: var(--inverted-surface);
+  --navigation-inverted-highlight: white;
+  --on-navigation-inverted-resting: hsl(var(--hue) 20% 75%);
+  --on-navigation-inverted-active: var(--inverted-surface-highlight);
+
+  --navigation-accent: var(--accent-surface);
+  --navigation-accent-highlight: white;
+  --on-navigation-accent-resting: hsl(var(--hue) 100% 85%);
+  --on-navigation-accent-active: white;
+
+  --modal-background: hsla(var(--hue), 20%, 2%, 0.88);
+  --box-shadow-color: hsla(var(--hue), 20%, 5%, 0.9);
+
+  --scrollbar-thumb: hsl(var(--hue) 10% 30%);
+}
