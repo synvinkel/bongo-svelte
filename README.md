@@ -1,7 +1,6 @@
 # Bongo Svelte
 
 TODO: 
-- Base styles and css variables
 - Demo page layout
 - Port button component from Bongo
 
