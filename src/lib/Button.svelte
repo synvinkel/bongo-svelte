@@ -28,29 +28,53 @@
 
 <style>
 	button {
+		display: inline-block;
+		position: relative;
+		user-select: none;
+		outline: none;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+		background-color: rgba(0, 0, 0, 0);
+
 		cursor: pointer;
-		background-color: var(--on-surface);
 		border: none;
 		padding: 5px;
 		border-radius: 4px;
-		transition: background-color 0.2s;
-
 		color: var(--accent-text);
 	}
 
-	button:active {
-		background-color: red;
-		transition: background-color 0s;
+	button:disabled {
+		cursor: not-allowed;
+	}
+
+	.type-outlined {
+		background-color: var(--background);
+		border: solid 1px var(--accent);
+	}
+
+	.type-contained {
+		background-color: var(--accent-surface);
+		color: var(--on-accent);
+	}
+
+	.state-loading {
+		border: solid 1px var(--container-outline-lighter);
 	}
 
 	.size-small {
-		font-size: 0.8rem;
+		font-size: 14px;
+		height: 30px;
+		padding: 0 10px;
 	}
 
 	.size-medium {
-		font-size: 1rem;
+		font-size: 16px;
+		height: 40px;
+		padding: 0 15px;
 	}
 	.size-large {
-		font-size: 1.2rem;
+		font-size: 18px;
+		height: 50px;
+		padding: 0 25px;
 	}
 </style>
