@@ -1,10 +1,28 @@
 <script lang="ts">
 	import './styles/default.css';
+	import { createEventDispatcher } from 'svelte';
+
+	const dispatch = createEventDispatcher();
 
 	export let size: 'small' | 'medium' | 'large' = 'medium';
+	export let type: 'outlined' | 'contained' | 'error' | 'text' = 'text';
+	export let loading: boolean = false;
+	export let disabled: boolean = false;
+
+	$: clickable = !disabled && !loading;
+
+	function onClick() {
+		if (clickable) {
+			dispatch('click');
+		}
+	}
 </script>
 
-<button class="bui size-{size}" on:click>
+<button
+	class="bui size-{size} type-{type} {loading && 'state-loading'}"
+	on:click={onClick}
+	disabled={!clickable}
+>
 	<slot />
 </button>
 
