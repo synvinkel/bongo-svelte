@@ -8,6 +8,10 @@
     </main>
 </div>
 
+<script>
+    import '$lib/styles/default.css'
+</script>
+
 <style>
     :global(body, html){
         padding: 0;
